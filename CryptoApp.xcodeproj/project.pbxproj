@@ -17,6 +17,9 @@
 		7963EBA9274E5C7F005D544D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963EBA3274E5C7F005D544D /* UIApplication.swift */; };
 		7963EBAA274E5C7F005D544D /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963EBA4274E5C7F005D544D /* Double.swift */; };
 		7963EBAB274E5C7F005D544D /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963EBA5274E5C7F005D544D /* PreviewProvider.swift */; };
+		7963EBB1274E5D16005D544D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963EBB0274E5D16005D544D /* HomeView.swift */; };
+		7963EBB5274E5EA5005D544D /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963EBB4274E5EA5005D544D /* CircleButtonView.swift */; };
+		7963EBB7274E6325005D544D /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963EBB6274E6325005D544D /* CircleButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		7963EBA3274E5C7F005D544D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		7963EBA4274E5C7F005D544D /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		7963EBA5274E5C7F005D544D /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		7963EBB0274E5D16005D544D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7963EBB4274E5EA5005D544D /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		7963EBB6274E6325005D544D /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		7963EB89274E57CC005D544D /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				7963EBAC274E5CE0005D544D /* Core */,
 				7963EB9F274E5C4C005D544D /* Extensions */,
 				7963EB8A274E57CC005D544D /* CryptoAppApp.swift */,
 				7963EB8C274E57CC005D544D /* ContentView.swift */,
@@ -91,6 +98,56 @@
 				7963EBA3274E5C7F005D544D /* UIApplication.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7963EBAC274E5CE0005D544D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7963EBB2274E5E6C005D544D /* Components */,
+				7963EBAD274E5CEB005D544D /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7963EBAD274E5CEB005D544D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7963EBAF274E5D02005D544D /* ViewModels */,
+				7963EBAE274E5CF7005D544D /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7963EBAE274E5CF7005D544D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7963EBB0274E5D16005D544D /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7963EBAF274E5D02005D544D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7963EBB2274E5E6C005D544D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7963EBB3274E5E88005D544D /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7963EBB3274E5E88005D544D /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				7963EBB4274E5EA5005D544D /* CircleButtonView.swift */,
+				7963EBB6274E6325005D544D /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7963EBB1274E5D16005D544D /* HomeView.swift in Sources */,
+				7963EBB7274E6325005D544D /* CircleButtonAnimationView.swift in Sources */,
 				7963EBA9274E5C7F005D544D /* UIApplication.swift in Sources */,
 				7963EBA6274E5C7F005D544D /* String.swift in Sources */,
 				7963EBA8274E5C7F005D544D /* Date.swift in Sources */,
@@ -170,6 +229,7 @@
 				7963EB8D274E57CC005D544D /* ContentView.swift in Sources */,
 				7963EBAB274E5C7F005D544D /* PreviewProvider.swift in Sources */,
 				7963EB8B274E57CC005D544D /* CryptoAppApp.swift in Sources */,
+				7963EBB5274E5EA5005D544D /* CircleButtonView.swift in Sources */,
 				7963EBAA274E5C7F005D544D /* Double.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
