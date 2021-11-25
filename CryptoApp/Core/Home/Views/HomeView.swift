@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var showPortfolio: Bool = false
+    @State private var showPortfolio: Bool = true
     @EnvironmentObject private var vm: HomeViewModel
     
     var body: some View {
@@ -20,6 +20,8 @@ struct HomeView: View {
             VStack{
                 
                 homeHeader
+                
+                HomeStatsView(showPortfolio: $showPortfolio)
                 
                 SearchBarView(searchText: $vm.searchtext)
                 
