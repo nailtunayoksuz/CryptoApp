@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792A3938274F9FB700F31262 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792A3937274F9FB600F31262 /* SearchBarView.swift */; };
 		7963EB8B274E57CC005D544D /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963EB8A274E57CC005D544D /* CryptoAppApp.swift */; };
 		7963EB8D274E57CC005D544D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963EB8C274E57CC005D544D /* ContentView.swift */; };
 		7963EB92274E57CF005D544D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7963EB91274E57CF005D544D /* Preview Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		792A3937274F9FB600F31262 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		7963EB87274E57CC005D544D /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7963EB8A274E57CC005D544D /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
 		7963EB8C274E57CC005D544D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		7963EBB2274E5E6C005D544D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				792A3937274F9FB600F31262 /* SearchBarView.swift */,
 				7963EBC5274EEDAD005D544D /* CoinImage */,
 				7963EBB3274E5E88005D544D /* CircleButton */,
 			);
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792A3938274F9FB700F31262 /* SearchBarView.swift in Sources */,
 				7963EBB1274E5D16005D544D /* HomeView.swift in Sources */,
 				7963EBBC274E6DCD005D544D /* CoinRowView.swift in Sources */,
 				7963EBB7274E6325005D544D /* CircleButtonAnimationView.swift in Sources */,
