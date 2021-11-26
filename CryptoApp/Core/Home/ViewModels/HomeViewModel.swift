@@ -81,10 +81,10 @@ class HomeViewModel : ObservableObject{
         
         
         stats.append(contentsOf: [
-        marketCap,
-        volume,
-        btcDominance
-        ,portfolio
+            marketCap,
+            volume,
+            btcDominance
+            ,portfolio
         ])
         return stats
     }

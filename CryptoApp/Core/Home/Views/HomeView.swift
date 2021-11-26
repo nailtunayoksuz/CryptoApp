@@ -9,13 +9,18 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var showPortfolio: Bool = true
     @EnvironmentObject private var vm: HomeViewModel
+    @State private var showPortfolio: Bool = false
+    @State private var showPortfolioView: Bool = false
     
     var body: some View {
         ZStack{
             Color.theme.background
                 .ignoresSafeArea()
+                .sheet(isPresented: $showPortfolioView) {
+                    PortfolioView(showPortfolioView: $showPortfolioView)
+                        .environmentObject(vm)
+                }
             
             VStack{
                 
@@ -27,9 +32,9 @@ struct HomeView: View {
                 
                 columnTitles
                 
-                if !showPortfolio{
+                if !showPortfolio {
                     allCoinsList
-                    .transition(.move(edge: .leading))
+                        .transition(.move(edge: .leading))
                 }
                 if showPortfolio{
                     portfolioCoinsList
@@ -58,9 +63,14 @@ extension HomeView{
     private var homeHeader: some View{
         HStack{
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-                .animation(.none, value: showPortfolio)
+                .animation(.none,value: showPortfolio)
+                .onTapGesture {
+                    if showPortfolio{
+                        showPortfolioView.toggle()
+                    }
+                }
                 .background(
-                CircleButtonAnimationView(animate: $showPortfolio)
+                    CircleButtonAnimationView(animate: $showPortfolio)
                 )
             Spacer()
             Text(showPortfolio ? "Portfolio" : "Live Prices")
